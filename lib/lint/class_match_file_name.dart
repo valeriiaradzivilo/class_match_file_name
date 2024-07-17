@@ -22,7 +22,7 @@ class ClassMatchFileName extends DartLintRule {
     CustomLintContext context,
   ) {
     // A call back fn that runs on all variable declarations in a file
-    context.registry.addVariableDeclaration((node) {
+    context.registry.addClassDeclaration((node) {
       // Get the file name
       final fileName = resolver.source.shortName;
       // Get the class name
@@ -37,11 +37,11 @@ class ClassMatchFileName extends DartLintRule {
 
   // Possible fixes for the lint error go here
   @override
-  List<Fix> getFixes() => [_ReplaceHisName()];
+  List<Fix> getFixes() => [_ReplaceClassName()];
 }
 
 // Fix that replaces class name with file string
-class _ReplaceHisName extends DartFix {
+class _ReplaceClassName extends DartFix {
   @override
   void run(
     CustomLintResolver resolver,
@@ -51,7 +51,7 @@ class _ReplaceHisName extends DartFix {
     List<AnalysisError> others,
   ) {
     // Callback fn that runs on every variable declaration in a file
-    context.registry.addVariableDeclaration((node) {
+    context.registry.addClassDeclaration((node) {
       final element = node.declaredElement;
 
       final fileName = resolver.source.shortName;
