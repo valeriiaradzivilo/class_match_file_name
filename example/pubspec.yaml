@@ -1,26 +1,19 @@
 name: example
 description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
-
-version: 1.0.0+1
+publish_to: "none"
+version: 0.1.0
 
 environment:
-  sdk: ">=3.4.3 <4.0.0"
+  sdk: ">=3.3.4 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.6
-  very_good_analysis: any
-
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-  flutter_lints: ^3.0.0
-  class_match_file_name:
-    path: ../
   custom_lint: ^0.6.4
+  custom_lint_example:
+    path: ../
+
+flutter:
+  uses-material-design: true
