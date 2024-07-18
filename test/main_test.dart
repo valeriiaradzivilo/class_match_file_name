@@ -2,8 +2,7 @@
 
 import 'dart:io';
 
-import 'package:class_match_file_name/class_match_file_name.dart';
-import 'package:class_match_file_name/rules/class_match_file_name_rule.dart';
+import 'package:class_match_file_name/src/class_match_file_name.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 import 'package:test/test.dart';
 

@@ -1,4 +1,3 @@
-// Lint rule to have class name match file name
 import 'dart:io';
 
 import 'package:analyzer/error/error.dart';
@@ -6,6 +5,20 @@ import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 import 'package:flutter/widgets.dart';
+
+// Entrypoint of plugin
+PluginBase createPlugin() => _Lint();
+
+// The class listing all the [LintRule]s and [Assist]s defined by our plugin
+class _Lint extends PluginBase {
+  // Lint rules
+  @override
+  List<LintRule> getLintRules(CustomLintConfigs configs) => [const ClassMatchFileNameRule()];
+
+  // Assists
+  @override
+  List<Assist> getAssists() => [];
+}
 
 class ClassMatchFileNameRule extends DartLintRule with TestableDartRule {
   const ClassMatchFileNameRule() : super(code: _code);
