@@ -1,4 +1,4 @@
-name: class_match_file_name_example
+name: class_match_file_name
 description: "Linter rule to ensure that the class name matches the file name."
 version: 0.0.2
 repository: https://github.com/valeriiaradzivilo/class_match_file_name
@@ -15,9 +15,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  class_match_file_name:
-    path: ./class_match_file_name
   flutter_lints: ^3.0.0
   custom_lint: ^0.6.4
+  custom_lint_core: ^0.6.3
+  custom_lint_builder: ^0.6.4
+  test: ^1.25.2
 
 flutter:

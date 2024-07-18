@@ -1,6 +1,6 @@
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 
-import 'rules/class_match_file_name.dart';
+import 'rules/class_match_file_name_rule.dart';
 
 // Entrypoint of plugin
 PluginBase createPlugin() => _Lint();
@@ -9,7 +9,7 @@ PluginBase createPlugin() => _Lint();
 class _Lint extends PluginBase {
   // Lint rules
   @override
-  List<LintRule> getLintRules(CustomLintConfigs configs) => [const ClassMatchFileName()];
+  List<LintRule> getLintRules(CustomLintConfigs configs) => [const ClassMatchFileNameRule()];
 
   // Assists
   @override

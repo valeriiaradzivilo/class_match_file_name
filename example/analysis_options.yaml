@@ -1,0 +1,15 @@
+include: package:very_good_analysis/analysis_options.yaml
+linter:
+  rules:
+    public_member_api_docs: false
+    directives_ordering: false
+    sort_pub_dependencies: false
+    always_put_required_named_parameters_first: false
+
+analyzer:
+  plugins:
+    - class_match_file_name
+
+class_match_file_name:
+  rules:
+    - class_match_file_name_rule: true

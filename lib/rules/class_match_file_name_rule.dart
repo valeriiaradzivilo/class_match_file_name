@@ -1,11 +1,14 @@
 // Lint rule to have class name match file name
+import 'dart:io';
+
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
+import 'package:flutter/widgets.dart';
 
-class ClassMatchFileName extends DartLintRule {
-  const ClassMatchFileName() : super(code: _code);
+class ClassMatchFileNameRule extends DartLintRule with TestableDartRule {
+  const ClassMatchFileNameRule() : super(code: _code);
 
   // Lint rule metadata
   static const _code = LintCode(
@@ -44,6 +47,14 @@ class ClassMatchFileName extends DartLintRule {
   // Possible fixes for the lint error go here
   @override
   List<Fix> getFixes() => [_ReplaceClassName()];
+
+  @visibleForTesting
+  @override
+  Future<List<AnalysisError>> testFile(File file) {
+    // expose this method for testing
+    // ignore: invalid_use_of_visible_for_testing_member
+    return super.testAnalyzeAndRun(file);
+  }
 }
 
 // Fix that replaces class name with file string
@@ -85,4 +96,12 @@ class _ReplaceClassName extends DartFix {
       });
     });
   }
+}
+
+/// an interface to allow testing of [DartLintRule]
+@visibleForTesting
+mixin TestableDartRule on DartLintRule {
+  /// run the lint rule on a file
+  @visibleForTesting
+  Future<List<AnalysisError>> testFile(File file);
 }
