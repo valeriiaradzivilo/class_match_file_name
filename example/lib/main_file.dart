@@ -14,8 +14,10 @@ class MyWidget extends StatelessWidget {
   }
 }
 
-class aMainFile extends StatelessWidget {
-  const aMainFile({super.key});
+
+
+class MainFile extends StatelessWidget {
+  const MainFile({super.key});
 
   @override
   Widget build(BuildContext context) {

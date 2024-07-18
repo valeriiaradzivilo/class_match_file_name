@@ -1,4 +1,5 @@
 import 'package:analyzer/dart/element/element.dart';
+import 'package:analyzer/dart/element/visitor.dart';
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
@@ -35,6 +36,8 @@ class ClassMatchFileName extends DartLintRule  {
 
       if (element == null || className == null) return;
 
+      if (className.startsWith('_')) return;
+
       print('Checking class: $className against file: $fileName');
       // Check if the class name matches the file name
       if (fileName.replaceAll('_', '') != className.toLowerCase()) {
@@ -62,37 +65,62 @@ class _ReplaceClassName extends DartFix {
     AnalysisError analysisError,
     List<AnalysisError> others,
   ) {
-    // Callback fn that runs on every variable declaration in a file
-    context.registry.addClassDeclaration((ClassDeclaration node) {
-      final ClassElement? element = node.declaredElement;
+    final String fileName = _fileName(resolver.source.shortName);
+    final String newClassName = _snakeCaseToCamelCase(fileName);
 
-      final String fileName =_fileName(resolver.source.shortName);
+    // Create a `ChangeBuilder` instance to do file operations with an action
+    final ChangeBuilder changeBuilder = reporter.createChangeBuilder(
+      message: 'Change class name',
+      priority: 1,
+    );
 
-      // `return` if the current class declaration is not where the lint
-      // error has appeared
-      if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
+    // Use the `changeBuilder` to make Dart file edits
+    changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
+      // Iterate over all class declarations in the file
+      context.registry.addClassDeclaration((ClassDeclaration node) {
+        final ClassElement? element = node.declaredElement;
 
-      // Create a `ChangeBuilder` instance to do file operations with an action
-      final ChangeBuilder changeBuilder = reporter.createChangeBuilder(
-        message: 'Change class name',
-        priority: 1,
-      );
-      // Use the `changeBuilder` to make Dart file edits
-      changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
-        // Use the `builder` to replace the variable name
-        builder.addSimpleReplacement(
+        // `return` if the current class declaration is not where the lint
+        // error has appeared
+        if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
+
+        // Replace the class name
+        builder.addReplacement(
           SourceRange(element.nameOffset, element.nameLength),
-          // the string to be replaced instead of class name
-          element.name.replaceFirst(
-            element.displayName,
-            _snakeCaseToCamelCase(fileName),
-          ),
+          (DartEditBuilder builder) => builder.write(newClassName),
         );
+        print('Replacing class: ${element.name} with $newClassName');
+        // Additionally, find and replace all references to the class
+        element.visitChildren(ElementVisitor(newClassName, builder));
       });
     });
   }
 }
 
+class ElementVisitor  extends SimpleElementVisitor<dynamic>{
+
+  final String newClassName;
+  final DartFileEditBuilder builder;
+
+  ElementVisitor(this.newClassName, this.builder);
+   @override
+  dynamic visitClassElement(ClassElement element) {
+   builder.addReplacement(
+              SourceRange(element.nameOffset, element.nameLength),
+              (DartEditBuilder builder) => builder.write(newClassName),
+            );
+  }
+
+  @override
+  dynamic visitConstructorElement(ConstructorElement element) {
+   builder.addReplacement(
+              SourceRange(element.nameOffset, element.nameLength),
+              (DartEditBuilder builder) => builder.write(newClassName),
+            );
+  }
+
+
+}
 
 String _snakeCaseToCamelCase(String text) {
   return text.split('_').asMap().map((int index, String word) {
@@ -101,5 +129,6 @@ String _snakeCaseToCamelCase(String text) {
   }).values.join('');
 }
 
-String _fileName(String path)=> path.replaceAll('.dart', '');
+String _fileName(String path) => path.replaceAll('.dart', '');
+
 
