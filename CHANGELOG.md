@@ -8,3 +8,8 @@
 
 * Linter is working
 * Quick fix is in progress
+
+
+## 0.1.1
+
+* Added check for the first class in file (the linter should only apply to the first class)
