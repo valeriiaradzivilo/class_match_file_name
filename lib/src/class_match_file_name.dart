@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
+import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/dart/ast/ast.dart';
 import 'package:analyzer_plugin/utilities/change_builder/change_builder_dart.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
@@ -29,18 +30,6 @@ Future<void> _renameFile(String oldPath, String newFileName) async {
   }
 }
 
-// String _snakeCaseToCamelCase(String text) {
-//   return text[0].toUpperCase() +
-//       text
-//           .split('_')
-//           .asMap()
-//           .map((int index, String word) =>
-//               MapEntry<int, String>(index, word[0].toUpperCase() + word.substring(1).toLowerCase()))
-//           .values
-//           .join('')
-//           .substring(1);
-// }
-
 class ClassMatchFileName extends DartLintRule {
   // Lint rule metadata
   static const LintCode _code = LintCode(
@@ -53,7 +42,7 @@ class ClassMatchFileName extends DartLintRule {
 
   // Possible fixes for the lint error go here
   @override
-  List<Fix> getFixes() => <Fix>[_ReplaceClassName()];
+  List<Fix> getFixes() => <Fix>[_ReplaceFileName()];
 
   // `run` is where you analyze a file and report lint errors
   // Invoked on a file automatically
@@ -88,7 +77,7 @@ class ClassMatchFileName extends DartLintRule {
 }
 
 // Fix that replaces class name with file string
-class _ReplaceClassName extends DartFix {
+class _ReplaceFileName extends DartFix {
   @override
   void run(
     CustomLintResolver resolver,
@@ -100,28 +89,30 @@ class _ReplaceClassName extends DartFix {
     final String fileName = _fileName(resolver.source.shortName);
 
     // Create a `ChangeBuilder` instance to do file operations with an action
-    final ChangeBuilder changeBuilder = reporter.createChangeBuilder(
-      message: 'Change class name',
-      priority: 2,
-    );
+    final ChangeBuilder changeBuilder =
+        reporter.createChangeBuilder(message: 'Change file name', priority: 1, id: fileName);
 
     // Use the `changeBuilder` to make Dart file edits
 
-    context.registry.addClassDeclaration((ClassDeclaration node) {
-      final ClassElement? element = node.declaredElement;
+    changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
+      context.registry.addClassDeclaration((ClassDeclaration node) {
+        final ClassElement? element = node.declaredElement;
 
-      // `return` if the current class declaration is not where the lint
-      // error has appeared
-      if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
+        print('Clicked on class: ${element?.name}');
 
-      print('Found class: ${element.name}');
+        // `return` if the current class declaration is not where the lint
+        // error has appeared
+        if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
 
-      final String newFileName = _camelCaseToSnakeCase(element.name);
-      changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
-        final filePath = resolver.source.fullName;
-        print('Replacing file name: ${filePath} with $newFileName');
+        print('Found class: ${element.name}');
 
-        _renameFile(resolver.source.fullName, newFileName);
+        final String newFileName = _camelCaseToSnakeCase(element.name);
+
+        builder.addReplacement(SourceRange(0, 1), (_) {
+          final filePath = resolver.source.fullName;
+          print('Replacing file name: ${filePath} with $newFileName');
+          _renameFile(resolver.source.fullName, newFileName);
+        });
       });
     });
   }

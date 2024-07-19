@@ -410,3 +410,155 @@ The Dart DevTools debugger and profiler is available at: http://127.0.0.1:52861/
 [class_match_file_name] 2024-07-19T14:52:39.242100 Checking class: MyWidget against file: my_widget
 [class_match_file_name] 2024-07-19T14:52:40.620219 Checking class: MyWidget against file: my_widget
 [class_match_file_name] 2024-07-19T14:52:53.207268 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:52:59.993223 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:54:41.706003 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:54:43.040394 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:54:43.194183 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:54:43.514282 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:54:43.527391 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:54:43.529019 File renamed successfully from /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart to my_widget
+[class_match_file_name] 2024-07-19T14:54:44.687669 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:54:44.698345 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:54:44.969205 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:54:44.981203 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:54:44.982322 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:54:53.942176 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:54:53.954721 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:54:57.255561 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:54:57.266294 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:55:30.101180 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:55:30.110696 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:55:30.111800 File renamed successfully from /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart to my_widget
+[class_match_file_name] 2024-07-19T14:55:31.419958 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:55:31.433206 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:55:39.022088 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:55:39.041746 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:55:51.997804 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:55:52.028229 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:55:53.183760 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:55:53.199331 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:55:55.895495 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:56:00.971582 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:56:03.246196 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:56:03.260056 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:56:03.261627 File renamed successfully from /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart to my_widget
+[_ReplaceClassName] 2024-07-19T14:56:03.531831 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:56:03.543928 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:56:03.545523 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[_ReplaceClassName] 2024-07-19T14:56:03.642846 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:56:03.653750 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:56:03.654879 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:56:04.797770 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:56:04.816851 Checking class: MyWidget against file: my_widget
+[_ReplaceClassName] 2024-07-19T14:56:05.065794 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:56:05.076859 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:56:05.077709 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:56:12.875786 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:56:12.887324 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:56:15.618950 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:53183/8sMSJsF8tk4=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53183/8sMSJsF8tk4=/devtools?uri=ws://127.0.0.1:53183/8sMSJsF8tk4=/ws
+[class_match_file_name] 2024-07-19T14:57:19.263553 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:57:26.189155 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:57:26.207042 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:57:26.211368 File renamed successfully from /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart to my_widget
+[_ReplaceClassName] 2024-07-19T14:57:26.660150 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:57:26.665674 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:57:26.668176 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[_ReplaceClassName] 2024-07-19T14:57:26.846575 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:57:26.854343 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:57:26.856727 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:57:27.979055 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:57:27.997745 Checking class: MyWidget against file: my_widget
+[_ReplaceClassName] 2024-07-19T14:57:28.246779 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:57:28.252075 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:57:28.253203 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:57:36.094458 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:57:36.103140 Checking class: MyWidget against file: my_widget
+[class_match_file_name] 2024-07-19T14:57:40.526161 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:57:43.135404 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:53289/Nt5dPm74XqA=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53289/Nt5dPm74XqA=/devtools?uri=ws://127.0.0.1:53289/Nt5dPm74XqA=/ws
+[class_match_file_name] 2024-07-19T14:59:02.650256 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:59:18.021893 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:59:18.540045 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:59:18.559719 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:59:18.564664 File renamed successfully from /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart to my_widget
+[_ReplaceClassName] 2024-07-19T14:59:18.827959 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:59:18.833424 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:59:18.835904 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[_ReplaceClassName] 2024-07-19T14:59:19.089746 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:59:19.095833 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:59:19.096971 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:59:20.311309 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:59:20.333016 Checking class: MyWidget against file: my_widget
+[_ReplaceClassName] 2024-07-19T14:59:20.578872 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:59:20.585398 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:59:20.586262 Failed to rename file: PathNotFoundException: Cannot rename file to '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/my_widget.dart', path = '/Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart' (OS Error: No such file or directory, errno = 2)
+[class_match_file_name] 2024-07-19T14:59:35.061684 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:59:35.075404 Checking class: MyWidget against file: my_widget
+[_ReplaceClassName] 2024-07-19T14:59:35.331849 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:59:35.341336 Replacing file name: /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart with my_widget
+[_ReplaceClassName] 2024-07-19T14:59:35.343631 File renamed successfully from /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart to my_widget
+[class_match_file_name] 2024-07-19T14:59:36.524225 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:59:37.660789 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:59:41.419222 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:59:47.277946 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:01:04.495439 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:53428/bCcge0vxNqU=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53428/bCcge0vxNqU=/devtools?uri=ws://127.0.0.1:53428/bCcge0vxNqU=/ws
+[class_match_file_name] 2024-07-19T15:01:53.273194 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:03:11.436298 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T15:03:11.939028 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:03:12.105334 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:03:12.943043 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:03:14.468492 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:03:19.240187 Clicked on class: [offset=105, length=8]
+The Dart VM service is listening on http://127.0.0.1:53571/ULroDUSnr24=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53571/ULroDUSnr24=/devtools?uri=ws://127.0.0.1:53571/ULroDUSnr24=/ws
+[class_match_file_name] 2024-07-19T15:04:10.917531 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T15:19:43.647129 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:19:46.817511 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:19:50.572229 Clicked on class: [offset=105, length=8]
+[class_match_file_name] 2024-07-19T15:20:32.067133 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:53710/XEm_mEcimP0=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53710/XEm_mEcimP0=/devtools?uri=ws://127.0.0.1:53710/XEm_mEcimP0=/ws
+[class_match_file_name] 2024-07-19T15:21:18.996690 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T15:21:57.863372 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:21:58.809875 Clicked on class: [offset=105, length=8]
+[_ReplaceClassName] 2024-07-19T15:22:00.914704 Clicked on class: [offset=105, length=8]
+[class_match_file_name] 2024-07-19T15:22:29.500859 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:23:18.780337 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:53953/nUi1ecgyETU=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53953/nUi1ecgyETU=/devtools?uri=ws://127.0.0.1:53953/nUi1ecgyETU=/ws
+[class_match_file_name] 2024-07-19T15:24:40.287431 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:55847/PdghWa3m7hY=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:55847/PdghWa3m7hY=/devtools?uri=ws://127.0.0.1:55847/PdghWa3m7hY=/ws
+[class_match_file_name] 2024-07-19T15:38:48.351017 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:56047/DhNnnGxdhU0=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56047/DhNnnGxdhU0=/devtools?uri=ws://127.0.0.1:56047/DhNnnGxdhU0=/ws
+The request analysis.updateContent failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Invalid overlay change: no content to change
+null
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The Dart VM service is listening on http://127.0.0.1:56229/OX2GwPyW2Fo=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56229/OX2GwPyW2Fo=/devtools?uri=ws://127.0.0.1:56229/OX2GwPyW2Fo=/ws
+The Dart VM service is listening on http://127.0.0.1:56319/PNpIS6HkbEw=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56319/PNpIS6HkbEw=/devtools?uri=ws://127.0.0.1:56319/PNpIS6HkbEw=/ws
+[class_match_file_name] 2024-07-19T15:41:40.222950 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:56440/YBCx7xYO4aE=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56440/YBCx7xYO4aE=/devtools?uri=ws://127.0.0.1:56440/YBCx7xYO4aE=/ws
