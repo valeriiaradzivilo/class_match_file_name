@@ -1,0 +1,3 @@
+class ChannelScanResult {}
+
+class Duplications {}

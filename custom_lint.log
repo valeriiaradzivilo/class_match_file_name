@@ -1,2 +1,100 @@
 The Dart VM service is listening on http://127.0.0.1:58811/4vzOI3iv3Mg=/
 The Dart DevTools debugger and profiler is available at: http://127.0.0.1:58811/4vzOI3iv3Mg=/devtools?uri=ws://127.0.0.1:58811/4vzOI3iv3Mg=/ws
+The Dart VM service is listening on http://127.0.0.1:58955/m_pYIMZ9dGg=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:58955/m_pYIMZ9dGg=/devtools?uri=ws://127.0.0.1:58955/m_pYIMZ9dGg=/ws
+[class_match_file_name] 2024-07-19T16:00:41.341387 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:00:48.704026 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:34.180767 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:34.532025 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:35.117382 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:35.179998 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.385565 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.432683 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:36.448091 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.449892 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.451819 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.454030 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.461888 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:36.463949 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:36.465313 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:36.469010 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:36.577531 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:36.589181 Checking class: C against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:37.113172 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:37.121705 Checking class: Ca against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:37.569308 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:37.575272 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:38.536936 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:38.548922 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:38.949162 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:38.983560 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:40.070052 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:40.090489 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:40.207332 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:40.212283 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:40.376852 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:40.380627 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:40.747036 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:40.753493 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:40.981105 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:40.987155 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:41.163098 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:41.179765 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:41.284421 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:41.292878 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:41.396114 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:41.406353 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:41.407406 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:41.690511 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:41.698530 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:41.700430 Checking class:  against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:42.113799 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:42.121031 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:42.122154 Checking class: D against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:42.370172 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:42.378747 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:42.380214 Checking class: Du against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:43.034277 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:43.041524 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:43.042373 Checking class: Dup against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:43.901375 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:43.908094 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:43.909505 Checking class: Dupl against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.153210 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:44.160155 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.160939 Checking class: Dupli against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.264557 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:44.269533 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.270918 Checking class: Duplic against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.518891 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:44.525949 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.526990 Checking class: Duplica against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.703674 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:44.710202 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.711207 Checking class: Duplicat against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.931242 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:44.938643 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:44.940474 Checking class: Duplicati against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:45.117800 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:45.122985 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:45.124141 Checking class: Duplicatio against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:45.291188 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:45.297717 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:45.298502 Checking class: Duplication against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:45.466374 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:45.471211 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:45.472123 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:47.034727 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:47.041731 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:47.042879 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:47.757379 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:47.763783 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:47.764547 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:49.024857 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:49.036740 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:49.037297 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:50.206621 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:10:50.209253 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:10:50.210300 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-07-19T16:11:09.472156 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T16:11:09.481605 Checking class: ChannelScanResult against file: channel_scan_result

@@ -68,12 +68,12 @@ class ClassMatchFileName extends DartLintRule {
       if (className.startsWith('_')) return;
 
       print('Checking class: $className against file: $fileName');
+      firstPublicClassChecked = true;
       // Check if the class name matches the file name
       if (fileName.replaceAll('_', '') != className.toLowerCase()) {
         // Report a lint error
         // ignore: deprecated_member_use
         reporter.reportErrorForElement(_code, element);
-        firstPublicClassChecked = true;
       }
     });
   }
