@@ -10,17 +10,18 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const _FileHasADifferentNameButPrivateClass();
   }
 }
 
-
-
-class MainFile extends StatelessWidget {
-  const MainFile({super.key});
+class _FileHasADifferentNameButPrivateClass extends StatelessWidget {
+  const _FileHasADifferentNameButPrivateClass();
 
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
   }
 }
+
+
+

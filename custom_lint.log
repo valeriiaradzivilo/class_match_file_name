@@ -1,0 +1,259 @@
+The Dart VM service is listening on http://127.0.0.1:50043/Jvj6CKnCu24=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:50043/Jvj6CKnCu24=/devtools?uri=ws://127.0.0.1:50043/Jvj6CKnCu24=/ws
+[class_match_file_name] 2024-07-19T13:47:23.108088 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T13:47:23.109382 Checking class: MainFile against file: main_file
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 Plugin _ReplaceClassName threw while analyzing /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart:
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 InconsistentAnalysisException: Requested result might be inconsistent with previously returned results
+[_ReplaceClassName] 2024-07-19T13:47:23.160460
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #0      AnalysisSessionImpl.checkConsistency (package:analyzer/src/dart/analysis/session.dart:54:7)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #1      AnalysisSessionImpl.getResolvedUnit (package:analyzer/src/dart/analysis/session.dart:129:5)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #2      ChangeBuilderImpl._createDartFileEditBuilder (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:287:33)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #3      ChangeBuilderImpl.addDartFileEdit (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:136:23)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #4      _ChangeBuilderImpl.addDartFileEdit (package:custom_lint_core/src/change_reporter.dart:134:33)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #5      _ReplaceClassName.run (package:class_match_file_name/src/class_match_file_name.dart:78:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #6      _ClientAnalyzerPlugin._runFixRun.<anonymous closure> (package:custom_lint_builder/src/client.dart:749:17)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #7      new Future.<anonymous closure> (dart:async/future.dart:257:37)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #8      _rootRun (dart:async/zone.dart:1391:47)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #9      _CustomZone.run (dart:async/zone.dart:1301:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #10     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #11     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #12     _rootRun (dart:async/zone.dart:1399:13)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #13     _CustomZone.run (dart:async/zone.dart:1301:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1233:23)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #15     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:18:15)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #16     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #17     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460 #18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+[_ReplaceClassName] 2024-07-19T13:47:23.160460
+[IgnoreCode] 2024-07-19T13:47:23.161705 Plugin IgnoreCode threw while analyzing /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart:
+[IgnoreCode] 2024-07-19T13:47:23.161705 InconsistentAnalysisException: Requested result might be inconsistent with previously returned results
+[IgnoreCode] 2024-07-19T13:47:23.161705
+[IgnoreCode] 2024-07-19T13:47:23.161705 #0      AnalysisSessionImpl.checkConsistency (package:analyzer/src/dart/analysis/session.dart:54:7)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #1      AnalysisSessionImpl.getResolvedUnit (package:analyzer/src/dart/analysis/session.dart:129:5)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #2      ChangeBuilderImpl._createDartFileEditBuilder (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:287:33)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #3      ChangeBuilderImpl.addDartFileEdit (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:136:23)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #4      _ChangeBuilderImpl.addDartFileEdit (package:custom_lint_core/src/change_reporter.dart:134:33)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #5      IgnoreCode.run (package:custom_lint_builder/src/ignore.dart:126:32)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #6      _ClientAnalyzerPlugin._runFixRun.<anonymous closure> (package:custom_lint_builder/src/client.dart:749:17)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #7      new Future.<anonymous closure> (dart:async/future.dart:257:37)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #8      _rootRun (dart:async/zone.dart:1391:47)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #9      _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #10     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #11     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #12     _rootRun (dart:async/zone.dart:1399:13)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #13     _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1233:23)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #15     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:18:15)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #16     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #17     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
+[IgnoreCode] 2024-07-19T13:47:23.161705 #18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+[IgnoreCode] 2024-07-19T13:47:23.161705
+[IgnoreCode] 2024-07-19T13:47:23.163470 Plugin IgnoreCode threw while analyzing /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart:
+[IgnoreCode] 2024-07-19T13:47:23.163470 InconsistentAnalysisException: Requested result might be inconsistent with previously returned results
+[IgnoreCode] 2024-07-19T13:47:23.163470
+[IgnoreCode] 2024-07-19T13:47:23.163470 #0      AnalysisSessionImpl.checkConsistency (package:analyzer/src/dart/analysis/session.dart:54:7)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #1      AnalysisSessionImpl.getResolvedUnit (package:analyzer/src/dart/analysis/session.dart:129:5)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #2      ChangeBuilderImpl._createDartFileEditBuilder (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:287:33)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #3      ChangeBuilderImpl.addDartFileEdit (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:136:23)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #4      _ChangeBuilderImpl.addDartFileEdit (package:custom_lint_core/src/change_reporter.dart:134:33)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #5      IgnoreCode.run (package:custom_lint_builder/src/ignore.dart:155:32)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #6      _ClientAnalyzerPlugin._runFixRun.<anonymous closure> (package:custom_lint_builder/src/client.dart:749:17)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #7      new Future.<anonymous closure> (dart:async/future.dart:257:37)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #8      _rootRun (dart:async/zone.dart:1391:47)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #9      _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #10     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #11     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #12     _rootRun (dart:async/zone.dart:1399:13)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #13     _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1233:23)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #15     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:18:15)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #16     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #17     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
+[IgnoreCode] 2024-07-19T13:47:23.163470 #18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+[IgnoreCode] 2024-07-19T13:47:23.163470
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 Plugin _ReplaceClassName threw while analyzing /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart:
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 InconsistentAnalysisException: Requested result might be inconsistent with previously returned results
+[_ReplaceClassName] 2024-07-19T13:47:23.164199
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #0      AnalysisSessionImpl.checkConsistency (package:analyzer/src/dart/analysis/session.dart:54:7)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #1      AnalysisSessionImpl.getResolvedUnit (package:analyzer/src/dart/analysis/session.dart:129:5)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #2      ChangeBuilderImpl._createDartFileEditBuilder (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:287:33)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #3      ChangeBuilderImpl.addDartFileEdit (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:136:23)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #4      _ChangeBuilderImpl.addDartFileEdit (package:custom_lint_core/src/change_reporter.dart:134:33)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #5      _ReplaceClassName.run (package:class_match_file_name/src/class_match_file_name.dart:78:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #6      _ClientAnalyzerPlugin._runFixRun.<anonymous closure> (package:custom_lint_builder/src/client.dart:749:17)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #7      new Future.<anonymous closure> (dart:async/future.dart:257:37)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #8      _rootRun (dart:async/zone.dart:1391:47)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #9      _CustomZone.run (dart:async/zone.dart:1301:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #10     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #11     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #12     _rootRun (dart:async/zone.dart:1399:13)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #13     _CustomZone.run (dart:async/zone.dart:1301:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1233:23)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #15     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:18:15)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #16     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #17     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199 #18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+[_ReplaceClassName] 2024-07-19T13:47:23.164199
+[IgnoreCode] 2024-07-19T13:47:23.164765 Plugin IgnoreCode threw while analyzing /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart:
+[IgnoreCode] 2024-07-19T13:47:23.164765 InconsistentAnalysisException: Requested result might be inconsistent with previously returned results
+[IgnoreCode] 2024-07-19T13:47:23.164765
+[IgnoreCode] 2024-07-19T13:47:23.164765 #0      AnalysisSessionImpl.checkConsistency (package:analyzer/src/dart/analysis/session.dart:54:7)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #1      AnalysisSessionImpl.getResolvedUnit (package:analyzer/src/dart/analysis/session.dart:129:5)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #2      ChangeBuilderImpl._createDartFileEditBuilder (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:287:33)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #3      ChangeBuilderImpl.addDartFileEdit (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:136:23)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #4      _ChangeBuilderImpl.addDartFileEdit (package:custom_lint_core/src/change_reporter.dart:134:33)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #5      IgnoreCode.run (package:custom_lint_builder/src/ignore.dart:126:32)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #6      _ClientAnalyzerPlugin._runFixRun.<anonymous closure> (package:custom_lint_builder/src/client.dart:749:17)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #7      new Future.<anonymous closure> (dart:async/future.dart:257:37)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #8      _rootRun (dart:async/zone.dart:1391:47)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #9      _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #10     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #11     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #12     _rootRun (dart:async/zone.dart:1399:13)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #13     _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1233:23)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #15     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:18:15)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #16     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #17     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
+[IgnoreCode] 2024-07-19T13:47:23.164765 #18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+[IgnoreCode] 2024-07-19T13:47:23.164765
+[IgnoreCode] 2024-07-19T13:47:23.165317 Plugin IgnoreCode threw while analyzing /Users/valeriiaradzivilo/development/repo/class_match_file_name/example/lib/main_file.dart:
+[IgnoreCode] 2024-07-19T13:47:23.165317 InconsistentAnalysisException: Requested result might be inconsistent with previously returned results
+[IgnoreCode] 2024-07-19T13:47:23.165317
+[IgnoreCode] 2024-07-19T13:47:23.165317 #0      AnalysisSessionImpl.checkConsistency (package:analyzer/src/dart/analysis/session.dart:54:7)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #1      AnalysisSessionImpl.getResolvedUnit (package:analyzer/src/dart/analysis/session.dart:129:5)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #2      ChangeBuilderImpl._createDartFileEditBuilder (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:287:33)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #3      ChangeBuilderImpl.addDartFileEdit (package:analyzer_plugin/src/utilities/change_builder/change_builder_core.dart:136:23)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #4      _ChangeBuilderImpl.addDartFileEdit (package:custom_lint_core/src/change_reporter.dart:134:33)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #5      IgnoreCode.run (package:custom_lint_builder/src/ignore.dart:155:32)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #6      _ClientAnalyzerPlugin._runFixRun.<anonymous closure> (package:custom_lint_builder/src/client.dart:749:17)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #7      new Future.<anonymous closure> (dart:async/future.dart:257:37)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #8      _rootRun (dart:async/zone.dart:1391:47)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #9      _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #10     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #11     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #12     _rootRun (dart:async/zone.dart:1399:13)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #13     _CustomZone.run (dart:async/zone.dart:1301:19)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #14     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1233:23)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #15     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:18:15)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #16     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #17     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
+[IgnoreCode] 2024-07-19T13:47:23.165317 #18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+[IgnoreCode] 2024-07-19T13:47:23.165317
+[class_match_file_name] 2024-07-19T14:04:36.247251 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:04:36.250633 Checking class: MainFile against file: main_file
+The Dart VM service is listening on http://127.0.0.1:50865/kH_Til80vDQ=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:50865/kH_Til80vDQ=/devtools?uri=ws://127.0.0.1:50865/kH_Til80vDQ=/ws
+[class_match_file_name] 2024-07-19T14:05:54.441694 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:05:54.446338 Checking class: MainFile against file: main_file
+[class_match_file_name] 2024-07-19T14:07:07.159834 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:07:07.160518 Checking class: MainFile against file: main_file
+The Dart VM service is listening on http://127.0.0.1:50991/5uh_S-hDtCY=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:50991/5uh_S-hDtCY=/devtools?uri=ws://127.0.0.1:50991/5uh_S-hDtCY=/ws
+[class_match_file_name] 2024-07-19T14:08:01.851068 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:08:01.857210 Checking class: MainFile against file: main_file
+[_ReplaceClassName] 2024-07-19T14:08:03.022688 Replacing class name with mainFile
+[class_match_file_name] 2024-07-19T14:09:57.463076 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:09:57.464578 Checking class: MainFile against file: main_file
+[class_match_file_name] 2024-07-19T14:10:38.818411 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:10:38.820175 Checking class: MainFile against file: main_file
+[_ReplaceClassName] 2024-07-19T14:11:03.126400 Replacing class name with MainFile
+[class_match_file_name] 2024-07-19T14:11:12.691972 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:11:14.150710 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:11:14.981408 Replacing class name with MainFile
+[class_match_file_name] 2024-07-19T14:11:44.453023 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:11:53.639675 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:11:59.179651 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:12:08.396401 Replacing class name with MainFile
+[_ReplaceClassName] 2024-07-19T14:12:11.415789 Replacing class name with MainFile
+[class_match_file_name] 2024-07-19T14:12:12.860387 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:15.788187 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:16.178147 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:16.360818 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:17.577934 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:17.756135 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:18.395245 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:18.697489 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:19.081481 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:19.267906 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:19.336004 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:19.549277 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:20.462586 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:20.589904 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:20.849143 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:21.048282 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:21.544172 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:22.909739 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:25.355604 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:25.625300 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:25.823005 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:25.967409 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:26.224322 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:32.190333 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:12:33.954865 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:13:48.140936 Replacing class name with MainFile
+[class_match_file_name] 2024-07-19T14:16:03.505342 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:16:07.133933 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:16:37.393562 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:51373/oMN-4fnV6ME=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:51373/oMN-4fnV6ME=/devtools?uri=ws://127.0.0.1:51373/oMN-4fnV6ME=/ws
+[class_match_file_name] 2024-07-19T14:17:30.140091 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.252229 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.259436 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.261141 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.264264 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.273121 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.274072 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.274550 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.275156 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.275659 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.276576 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.280748 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.282325 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.283616 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.300388 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.301205 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.301732 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.302381 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.808516 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:30.976644 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:31.163066 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:31.302271 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:31.520335 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:31.720176 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:32.627005 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:32.861338 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:32.998044 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:33.083959 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:33.798858 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:33.997975 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:34.163129 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:34.644228 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:34.876818 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:35.090410 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:35.340750 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:35.603929 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:35.817090 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:35.937983 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:36.346671 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:36.610708 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:36.842267 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:37.080023 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:37.200898 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:39.170754 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:39.502083 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:46.749500 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:55.291576 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:17:58.409097 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:18:00.222598 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:18:01.591384 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:18:03.165864 Replacing class name with MainFile
+[_ReplaceClassName] 2024-07-19T14:18:13.832715 Replacing class name with MainFile
+[class_match_file_name] 2024-07-19T14:18:29.467628 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:19:04.423035 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:19:09.451116 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T14:19:17.613205 Checking class: MyWidget against file: main_file
+[_ReplaceClassName] 2024-07-19T14:20:45.993240 Found class: MyWidget
+[_ReplaceClassName] 2024-07-19T14:20:46.008816 Replacing class: MyWidget with MainFile
+[class_match_file_name] 2024-07-19T14:20:47.371208 Checking class: MainFile against file: main_file
+[class_match_file_name] 2024-07-19T14:20:49.451220 Checking class: MyWidget against file: main_file

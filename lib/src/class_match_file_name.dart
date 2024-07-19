@@ -1,5 +1,4 @@
 import 'package:analyzer/dart/element/element.dart';
-import 'package:analyzer/dart/element/visitor.dart';
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
@@ -7,15 +6,31 @@ import 'package:analyzer/src/dart/ast/ast.dart';
 import 'package:analyzer_plugin/utilities/change_builder/change_builder_dart.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 
-class ClassMatchFileName extends DartLintRule  {
-  const ClassMatchFileName() : super(code: _code);
+String _fileName(String path) => path.replaceAll('.dart', '');
 
+String _snakeCaseToCamelCase(String text) {
+  return 
+  text[0].toUpperCase() +
+  text.split('_').asMap().map((int index, String word) => 
+  MapEntry<int, String>(index, word[0].toUpperCase() + word.substring(1).toLowerCase())).values.join('')
+  .substring(1);
+}
+
+
+
+class ClassMatchFileName extends DartLintRule  {
   // Lint rule metadata
   static const LintCode _code = LintCode(
     name: 'class_match_file_name',
     problemMessage: 'Class name should match file name',
     errorSeverity: ErrorSeverity.ERROR,
   );
+
+  const ClassMatchFileName() : super(code: _code);
+
+  // Possible fixes for the lint error go here
+  @override
+  List<Fix> getFixes() => <Fix>[_ReplaceClassName()];
 
   // `run` is where you analyze a file and report lint errors
   // Invoked on a file automatically
@@ -48,12 +63,11 @@ class ClassMatchFileName extends DartLintRule  {
     });
   }
 
-  // Possible fixes for the lint error go here
-  @override
-  List<Fix> getFixes() => <Fix>[_ReplaceClassName()];
+
 
   
 }
+
 
 // Fix that replaces class name with file string
 class _ReplaceClassName extends DartFix {
@@ -75,8 +89,7 @@ class _ReplaceClassName extends DartFix {
     );
 
     // Use the `changeBuilder` to make Dart file edits
-    changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
-      // Iterate over all class declarations in the file
+  
       context.registry.addClassDeclaration((ClassDeclaration node) {
         final ClassElement? element = node.declaredElement;
 
@@ -84,51 +97,26 @@ class _ReplaceClassName extends DartFix {
         // error has appeared
         if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
 
-        // Replace the class name
-        builder.addReplacement(
-          SourceRange(element.nameOffset, element.nameLength),
-          (DartEditBuilder builder) => builder.write(newClassName),
-        );
-        print('Replacing class: ${element.name} with $newClassName');
+        print('Found class: ${element.name}');
+
+     
+       changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
+  
+      print('Replacing class: ${element.name} with $newClassName');
         // Additionally, find and replace all references to the class
-        element.visitChildren(ElementVisitor(newClassName, builder));
+        // in the file
+       builder.addSimpleReplacement(
+          SourceRange(element.nameOffset, element.nameLength),
+          // the string to be replaced instead of class name
+          element.name.replaceAll(
+            element.displayName,
+            _snakeCaseToCamelCase(fileName),
+          ),
+        );
+        
       });
     });
   }
 }
-
-class ElementVisitor  extends SimpleElementVisitor<dynamic>{
-
-  final String newClassName;
-  final DartFileEditBuilder builder;
-
-  ElementVisitor(this.newClassName, this.builder);
-   @override
-  dynamic visitClassElement(ClassElement element) {
-   builder.addReplacement(
-              SourceRange(element.nameOffset, element.nameLength),
-              (DartEditBuilder builder) => builder.write(newClassName),
-            );
-  }
-
-  @override
-  dynamic visitConstructorElement(ConstructorElement element) {
-   builder.addReplacement(
-              SourceRange(element.nameOffset, element.nameLength),
-              (DartEditBuilder builder) => builder.write(newClassName),
-            );
-  }
-
-
-}
-
-String _snakeCaseToCamelCase(String text) {
-  return text.split('_').asMap().map((int index, String word) {
-    if (index == 0) return MapEntry<int, String>(index, word.toLowerCase());
-    return MapEntry<int, String>(index, word[0].toUpperCase() + word.substring(1).toLowerCase());
-  }).values.join('');
-}
-
-String _fileName(String path) => path.replaceAll('.dart', '');
 
 

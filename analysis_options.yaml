@@ -1,5 +1,7 @@
-linter:
-  rules:
-    public_member_api_docs: false
-    always_specify_types: true
-    omit_local_variable_types: false
+analyzer:
+  plugins:
+    - custom_lint
+
+custom_lint:
+  debug: true
+  verbose: true
