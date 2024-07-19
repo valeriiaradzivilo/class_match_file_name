@@ -8,28 +8,7 @@ import 'package:analyzer/src/dart/ast/ast.dart';
 import 'package:analyzer_plugin/utilities/change_builder/change_builder_dart.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 
-String _camelCaseToSnakeCase(String text) {
-  return text
-      .split('')
-      .map((String char) => char == char.toUpperCase() ? '_$char' : char)
-      .join('')
-      .toLowerCase()
-      .substring(1);
-}
-
-String _fileName(String path) => path.replaceAll('.dart', '');
-
-Future<void> _renameFile(String oldPath, String newFileName) async {
-  File file = File(oldPath);
-  try {
-    final folder = oldPath.split('/').sublist(0, oldPath.split('/').length - 1).join('/') + '/';
-    await file.rename(folder + newFileName + '.dart');
-    print('File renamed successfully from $oldPath to $newFileName');
-  } catch (e) {
-    print('Failed to rename file: $e');
-  }
-}
-
+/// Main DartLintRule class that finds the first class that has different name compared to the file name
 class ClassMatchFileName extends DartLintRule {
   // Lint rule metadata
   static const LintCode _code = LintCode(
@@ -42,7 +21,9 @@ class ClassMatchFileName extends DartLintRule {
 
   // Possible fixes for the lint error go here
   @override
-  List<Fix> getFixes() => <Fix>[_ReplaceFileName()];
+  List<Fix> getFixes() => <Fix>[
+        // _ReplaceFileName()
+      ];
 
   // `run` is where you analyze a file and report lint errors
   // Invoked on a file automatically
@@ -79,7 +60,9 @@ class ClassMatchFileName extends DartLintRule {
   }
 }
 
-// Fix that replaces class name with file string
+/// Fix that replaces class name with file string
+// Removed until the fix is implemented
+// ignore: unused_element
 class _ReplaceFileName extends DartFix {
   @override
   void run(
@@ -118,5 +101,27 @@ class _ReplaceFileName extends DartFix {
         });
       });
     });
+  }
+}
+
+String _camelCaseToSnakeCase(String text) {
+  return text
+      .split('')
+      .map((String char) => char == char.toUpperCase() ? '_$char' : char)
+      .join('')
+      .toLowerCase()
+      .substring(1);
+}
+
+String _fileName(String path) => path.replaceAll('.dart', '');
+
+Future<void> _renameFile(String oldPath, String newFileName) async {
+  File file = File(oldPath);
+  try {
+    final folder = oldPath.split('/').sublist(0, oldPath.split('/').length - 1).join('/') + '/';
+    await file.rename(folder + newFileName + '.dart');
+    print('File renamed successfully from $oldPath to $newFileName');
+  } catch (e) {
+    print('Failed to rename file: $e');
   }
 }
