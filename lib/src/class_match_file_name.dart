@@ -52,8 +52,10 @@ class ClassMatchFileName extends DartLintRule {
     ErrorReporter reporter,
     CustomLintContext context,
   ) {
+    bool firstPublicClassChecked = false;
     // A call back fn that runs on all variable declarations in a file
     context.registry.addClassDeclaration((ClassDeclaration node) {
+      if (firstPublicClassChecked) return;
       // Get the file name
       final String fileName = _fileName(resolver.source.shortName);
       // Get the class name
@@ -71,6 +73,7 @@ class ClassMatchFileName extends DartLintRule {
         // Report a lint error
         // ignore: deprecated_member_use
         reporter.reportErrorForElement(_code, element);
+        firstPublicClassChecked = true;
       }
     });
   }

@@ -562,3 +562,24 @@ The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56319/
 [class_match_file_name] 2024-07-19T15:41:40.222950 Checking class: MyWidget against file: main_file
 The Dart VM service is listening on http://127.0.0.1:56440/YBCx7xYO4aE=/
 The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56440/YBCx7xYO4aE=/devtools?uri=ws://127.0.0.1:56440/YBCx7xYO4aE=/ws
+The Dart VM service is listening on http://127.0.0.1:57710/Ma3hi5r4FjI=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:57710/Ma3hi5r4FjI=/devtools?uri=ws://127.0.0.1:57710/Ma3hi5r4FjI=/ws
+[class_match_file_name] 2024-07-19T15:48:42.824680 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:41.138747 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:41.979803 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:43.203008 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:43.648697 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:44.802341 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:45.636586 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:45.841828 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:46.029966 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:46.330111 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:49.046887 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:49.048570 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:49.539131 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:57:49.590988 Checking class: AAAA against file: main_file
+[class_match_file_name] 2024-07-19T15:57:49.592552 Checking class: AAAA against file: main_file
+[class_match_file_name] 2024-07-19T15:57:50.715741 Checking class: AAAA against file: main_file
+[class_match_file_name] 2024-07-19T15:57:58.611182 Checking class: QQQUHJQJ against file: main_file
+[class_match_file_name] 2024-07-19T15:57:59.788349 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-19T15:58:00.917091 Checking class: MyWidget against file: main_file

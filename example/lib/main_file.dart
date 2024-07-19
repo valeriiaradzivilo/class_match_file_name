@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void fn() {
   print('Hello, World!');
-  print("aaa"); 
+  print("aaa");
 }
 
 class MyWidget extends StatelessWidget {
@@ -14,6 +14,15 @@ class MyWidget extends StatelessWidget {
   }
 }
 
+class QQQUHJQJ extends StatelessWidget {
+  const QQQUHJQJ({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
 class _FileHasADifferentNameButPrivateClass extends StatelessWidget {
   const _FileHasADifferentNameButPrivateClass();
 
@@ -22,6 +31,3 @@ class _FileHasADifferentNameButPrivateClass extends StatelessWidget {
     return const Placeholder();
   }
 }
-
-
-
