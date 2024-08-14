@@ -1,3 +1,8 @@
+## 0.1.4
+
+* Fixed LintCode issue
+
+
 ## 0.1.3
 
 * Removed Quick fix until it is fixed

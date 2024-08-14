@@ -1,0 +1,4 @@
+The Dart VM service is listening on http://127.0.0.1:49504/J2-luzm7G-0=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:49504/J2-luzm7G-0=/devtools?uri=ws://127.0.0.1:49504/J2-luzm7G-0=/ws
+[class_match_file_name] 2024-07-22T10:03:00.013910 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-07-22T10:03:00.033065 Checking class: ChannelScanResult against file: channel_scan_result
