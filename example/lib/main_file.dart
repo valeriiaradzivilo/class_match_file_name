@@ -5,6 +5,7 @@ void fn() {
   print("aaa");
 }
 
+// expect_lint: class_match_file_name
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
 

@@ -2,3 +2,37 @@ The Dart VM service is listening on http://127.0.0.1:49504/J2-luzm7G-0=/
 The Dart DevTools debugger and profiler is available at: http://127.0.0.1:49504/J2-luzm7G-0=/devtools?uri=ws://127.0.0.1:49504/J2-luzm7G-0=/ws
 [class_match_file_name] 2024-07-22T10:03:00.013910 Checking class: MyWidget against file: main_file
 [class_match_file_name] 2024-07-22T10:03:00.033065 Checking class: ChannelScanResult against file: channel_scan_result
+The Dart VM service is listening on http://127.0.0.1:49284/Er8f-jnn4Ks=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:49284/Er8f-jnn4Ks=/devtools/?uri=ws://127.0.0.1:49284/Er8f-jnn4Ks=/ws
+[class_match_file_name] 2024-11-05T16:15:56.142505 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:15:56.147394 Reporting lint error for class: Duplications
+[class_match_file_name] 2024-11-05T16:16:12.587637 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:12.588869 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:33.426232 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:33.476350 Reporting lint error for class: Duplications
+[class_match_file_name] 2024-11-05T16:16:33.632291 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:33.633514 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:39.601094 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:39.602661 Reporting lint error for class: Duplications
+[class_match_file_name] 2024-11-05T16:16:39.618434 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:39.619067 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:47.065500 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:47.067024 Reporting lint error for class: Duplications
+[class_match_file_name] 2024-11-05T16:16:47.083646 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:47.084537 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:47.919485 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:47.920433 Reporting lint error for class: Duplications
+[class_match_file_name] 2024-11-05T16:16:47.949191 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:47.953147 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:49.145917 Checking class: Duplications against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:49.146648 Reporting lint error for class: Duplications
+[class_match_file_name] 2024-11-05T16:16:49.154387 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:49.155023 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:53.419169 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:53.431477 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:53.432992 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:16:55.293731 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:16:55.301785 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:16:55.302389 Reporting lint error for class: MyWidget
+[class_match_file_name] 2024-11-05T16:17:20.613938 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:17:20.679963 Checking class: MyWidget against file: main_file
