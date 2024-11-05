@@ -1,7 +1,8 @@
 import 'dart:io';
 
 import 'package:analyzer/dart/element/element.dart';
-import 'package:analyzer/error/error.dart';
+// ignore: undefined_hidden_name
+import 'package:analyzer/error/error.dart' hide LintCode;
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/dart/ast/ast.dart';
@@ -48,7 +49,7 @@ class ClassMatchFileName extends DartLintRule {
 
       if (className.startsWith('_')) return;
 
-      print('Checking class: $className against file: $fileName');
+      // print('Checking class: $className against file: $fileName');
       firstPublicClassChecked = true;
       // Check if the class name matches the file name
       if (fileName.replaceAll('_', '') != className.toLowerCase()) {
@@ -82,19 +83,19 @@ class _ReplaceFileName extends DartFix {
       context.registry.addClassDeclaration((ClassDeclaration node) {
         final ClassElement? element = node.declaredElement;
 
-        print('Clicked on class: ${element?.name}');
+        // print('Clicked on class: ${element?.name}');
 
         // `return` if the current class declaration is not where the lint
         // error has appeared
         if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
 
-        print('Found class: ${element.name}');
+        // print('Found class: ${element.name}');
 
         final String newFileName = _camelCaseToSnakeCase(element.name);
 
         builder.addReplacement(SourceRange(0, 1), (_) {
           final filePath = resolver.source.fullName;
-          print('Replacing file name: ${filePath} with $newFileName');
+          // print('Replacing file name: ${filePath} with $newFileName');
           _renameFile(resolver.source.fullName, newFileName);
         });
       });
@@ -118,8 +119,8 @@ Future<void> _renameFile(String oldPath, String newFileName) async {
   try {
     final folder = oldPath.split('/').sublist(0, oldPath.split('/').length - 1).join('/') + '/';
     await file.rename(folder + newFileName + '.dart');
-    print('File renamed successfully from $oldPath to $newFileName');
+    // print('File renamed successfully from $oldPath to $newFileName');
   } catch (e) {
-    print('Failed to rename file: $e');
+    // print('Failed to rename file: $e');
   }
 }
