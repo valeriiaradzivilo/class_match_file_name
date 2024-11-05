@@ -1,3 +1,8 @@
+## 0.2.0
+
+* Updated code and packages
+
+
 ## 0.1.4
 
 * Fixed LintCode issue

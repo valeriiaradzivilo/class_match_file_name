@@ -88,3 +88,16 @@ The Dart DevTools debugger and profiler is available at: http://127.0.0.1:50874/
 [class_match_file_name] 2024-11-05T16:38:08.447173 Checking class: MyWidget against file: main_file
 [class_match_file_name] 2024-11-05T16:39:20.037435 Checking class: ChannelScanResult against file: channel_scan_result
 [class_match_file_name] 2024-11-05T16:39:20.053372 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:51824/lOhy1REyyxE=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:51824/lOhy1REyyxE=/devtools/?uri=ws://127.0.0.1:51824/lOhy1REyyxE=/ws
+[class_match_file_name] 2024-11-05T16:41:22.444506 Checking class: ChannelScanResult against file: channel_scan_result
+The Dart VM service is listening on http://127.0.0.1:51955/7LbStX5Cqws=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:51955/7LbStX5Cqws=/devtools/?uri=ws://127.0.0.1:51955/7LbStX5Cqws=/ws
+The Dart VM service is listening on http://127.0.0.1:52081/hfxaQMvtASk=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:52081/hfxaQMvtASk=/devtools/?uri=ws://127.0.0.1:52081/hfxaQMvtASk=/ws
+[class_match_file_name] 2024-11-05T16:42:37.762812 Checking class: ChannelScanResult against file: channel_scan_result
+[class_match_file_name] 2024-11-05T16:42:51.451263 Checking class: MyWidget against file: main_file
+The Dart VM service is listening on http://127.0.0.1:54800/r86OT4LKhbg=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54800/r86OT4LKhbg=/devtools/?uri=ws://127.0.0.1:54800/r86OT4LKhbg=/ws
+[class_match_file_name] 2024-11-05T16:54:22.229392 Checking class: MyWidget against file: main_file
+[class_match_file_name] 2024-11-05T16:54:22.256443 Checking class: ChannelScanResult against file: channel_scan_result
