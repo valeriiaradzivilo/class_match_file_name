@@ -1,3 +1,9 @@
+## 0.2.1
+
+* Fixed error in logs
+* Removed prints from code
+
+
 ## 0.2.0
 
 * Updated code and packages

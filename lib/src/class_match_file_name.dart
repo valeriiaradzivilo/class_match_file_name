@@ -75,7 +75,8 @@ class _ReplaceFileName extends DartFix {
     // final String fileName = _fileName(resolver.source.shortName);
 
     // Create a `ChangeBuilder` instance to do file operations with an action
-    final ChangeBuilder changeBuilder = reporter.createChangeBuilder(message: 'Change file name', priority: 1);
+    final ChangeBuilder changeBuilder =
+        reporter.createChangeBuilder(message: 'Change file name', priority: 1);
 
     // Use the `changeBuilder` to make Dart file edits
 
@@ -87,14 +88,15 @@ class _ReplaceFileName extends DartFix {
 
         // `return` if the current class declaration is not where the lint
         // error has appeared
-        if (element == null || !analysisError.sourceRange.intersects(node.sourceRange)) return;
+        if (element == null ||
+            !analysisError.sourceRange.intersects(node.sourceRange)) return;
 
         // print('Found class: ${element.name}');
 
         final String newFileName = _camelCaseToSnakeCase(element.name);
 
         builder.addReplacement(SourceRange(0, 1), (_) {
-          final filePath = resolver.source.fullName;
+          // final filePath = resolver.source.fullName;
           // print('Replacing file name: ${filePath} with $newFileName');
           _renameFile(resolver.source.fullName, newFileName);
         });
@@ -117,7 +119,9 @@ String _fileName(String path) => path.replaceAll('.dart', '');
 Future<void> _renameFile(String oldPath, String newFileName) async {
   File file = File(oldPath);
   try {
-    final folder = oldPath.split('/').sublist(0, oldPath.split('/').length - 1).join('/') + '/';
+    final folder =
+        oldPath.split('/').sublist(0, oldPath.split('/').length - 1).join('/') +
+            '/';
     await file.rename(folder + newFileName + '.dart');
     // print('File renamed successfully from $oldPath to $newFileName');
   } catch (e) {
