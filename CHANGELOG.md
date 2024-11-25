@@ -1,3 +1,8 @@
+## 0.2.2
+
+* Remove logs
+
+
 ## 0.2.1
 
 * Fixed error in logs
