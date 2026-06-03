@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:analyzer/dart/element/element.dart';
 // ignore: undefined_hidden_name
 import 'package:analyzer/error/error.dart' hide LintCode;
 import 'package:analyzer/error/listener.dart';
@@ -9,7 +8,16 @@ import 'package:analyzer/src/dart/ast/ast.dart';
 import 'package:analyzer_plugin/utilities/change_builder/change_builder_dart.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 
-/// Main DartLintRule class that finds the first class that has different name compared to the file name
+/// Lint rule that reports when the first public class in a file does not match
+/// the file name.
+///
+/// Only the **first public class** in a file is checked:
+///   * Private classes (names starting with `_`) are skipped entirely.
+///   * Public classes declared after the first one are not checked.
+///
+/// The comparison is case-insensitive and ignores underscores in the file
+/// name, so `user_profile.dart` matches a `UserProfile` class while
+/// `order_service.dart` declaring `PaymentProcessor` is reported as an error.
 class ClassMatchFileName extends DartLintRule {
   // Lint rule metadata
   static const LintCode _code = LintCode(
@@ -35,26 +43,24 @@ class ClassMatchFileName extends DartLintRule {
     CustomLintContext context,
   ) {
     bool firstPublicClassChecked = false;
-    // A call back fn that runs on all variable declarations in a file
+    // A callback that runs on every class declaration in a file
     context.registry.addClassDeclaration((ClassDeclaration node) {
       if (firstPublicClassChecked) return;
-      // Get the file name
-      final String fileName = _fileName(resolver.source.shortName);
+
       // Get the class name
-      final String? className = node.name.lexeme;
+      final String className = node.name.lexeme;
 
-      final ClassElement? element = node.declaredElement;
-
-      if (element == null || className == null) return;
-
+      // Private classes are skipped; only the first public class is checked.
       if (className.startsWith('_')) return;
 
-      // print('Checking class: $className against file: $fileName');
       firstPublicClassChecked = true;
+
+      // Get the file name
+      final String fileName = _fileName(resolver.source.shortName);
       // Check if the class name matches the file name
       if (fileName.replaceAll('_', '') != className.toLowerCase()) {
-        // Report a lint error
-        reporter.atElement(element, _code);
+        // Report a lint error on the class name token
+        reporter.atToken(node.name, _code);
       }
     });
   }
@@ -82,18 +88,11 @@ class _ReplaceFileName extends DartFix {
 
     changeBuilder.addDartFileEdit((DartFileEditBuilder builder) {
       context.registry.addClassDeclaration((ClassDeclaration node) {
-        final ClassElement? element = node.declaredElement;
-
-        // print('Clicked on class: ${element?.name}');
-
         // `return` if the current class declaration is not where the lint
         // error has appeared
-        if (element == null ||
-            !analysisError.sourceRange.intersects(node.sourceRange)) return;
+        if (!analysisError.sourceRange.intersects(node.sourceRange)) return;
 
-        // print('Found class: ${element.name}');
-
-        final String newFileName = _camelCaseToSnakeCase(element.name);
+        final String newFileName = _camelCaseToSnakeCase(node.name.lexeme);
 
         builder.addReplacement(SourceRange(0, 1), (_) {
           // final filePath = resolver.source.fullName;

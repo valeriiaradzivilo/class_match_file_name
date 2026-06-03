@@ -1,5 +1,7 @@
 # Class Match File Name Linter
 
+> Maintained by **Valeriia Radzivilo** — [github.com/valeriiaradzivilo](https://github.com/valeriiaradzivilo)
+
 ## What for?
 
 This package provides a custom linter rule to ensure that the file name and the class name within it are consistent. This can be particularly useful during refactoring, as it helps maintain a clear and organized codebase by enforcing naming conventions. By automatically checking and suggesting fixes for mismatched names, this linter aids in reducing errors and improving code readability.
@@ -54,5 +56,7 @@ To fix the issue, you can rename the file to example_class.dart to match the cla
 ## Contribution
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request on GitHub. I appreciate your help in improving this project.
 
-## Made by a Ukrainian
+## Author
+Created and maintained by **Valeriia Radzivilo** ([@valeriiaradzivilo](https://github.com/valeriiaradzivilo)).
+
 This project is proudly made by a Ukrainian developer. Your support and feedback are greatly appreciated.

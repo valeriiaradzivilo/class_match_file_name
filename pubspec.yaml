@@ -1,16 +1,18 @@
 name: class_match_file_name
 description: A linter to ensure that class name matches file name. For example if file name is `my_class.dart` then class name should be `MyClass`. Created by Ukrainian
-version: 0.2.2
-repository: https://github.com/valeriiaradzivilo/class_match_file_name.git
+version: 0.2.3
+homepage: https://github.com/valeriiaradzivilo/class_match_file_name
+repository: https://github.com/valeriiaradzivilo/class_match_file_name
+issue_tracker: https://github.com/valeriiaradzivilo/class_match_file_name/issues
+documentation: https://github.com/valeriiaradzivilo/class_match_file_name#readme
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
-  analyzer: ^6.7.0
-  analyzer_plugin: ^0.11.3
-  custom_lint_builder: ^0.6.4
+  analyzer: ^7.3.0
+  analyzer_plugin: ^0.13.0
+  custom_lint_builder: ^0.7.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  test: ^1.25.0

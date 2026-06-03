@@ -1,3 +1,12 @@
+## 0.2.3
+
+* Migrated to `analyzer` 7 and `custom_lint_builder` 0.7 for compatibility with current Dart SDKs
+* Updated the rule to use the non-deprecated analyzer reporting API
+* Removed the Flutter dependency — the package is now pure Dart (tests use `package:test`)
+* Reworked the `example/` with clear passing and failing cases
+* Added unit tests and dartdoc comments for the public API
+
+
 ## 0.2.2
 
 * Remove logs

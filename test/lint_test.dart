@@ -1,51 +1,45 @@
-// import 'dart:io';
+import 'dart:io';
 
-// import 'package:class_match_file_name/class_match_file_name.dart';
-// import 'package:custom_lint_builder/custom_lint_builder.dart';
-// import 'package:flutter_test/flutter_test.dart';
+import 'package:class_match_file_name/class_match_file_name.dart';
+import 'package:custom_lint_builder/custom_lint_builder.dart';
+import 'package:test/test.dart';
 
-// void main() {
-//   final files = getFiles();
+void main() {
+  late DartLintRule rule;
 
-//   group('ClassMatchFileLint', () {
-//     test('Check ClassMatchFileLint', () async {
-//       final plugin = createPlugin();
-//       final lints = plugin.getLintRules(CustomLintConfigs.empty);
-//       for (final lint in lints) {
-//         if (!(lint is DartLintRule)) return;
-//         for (final f in files) {
-//           final errors = await lint.testAnalyzeAndRun(File.fromUri(f.uri));
-//           final expected = getExpectedErrorsCount(File.fromUri(f.uri), lint.code.name);
-//           expect(errors.length, expected, reason: 'Expected $expected errors for ${f}');
-//         }
-//       }
-//     });
-//   });
-// }
+  setUp(() {
+    final plugin = createPlugin();
+    // ignore: invalid_use_of_internal_member
+    final rules = plugin.getLintRules(CustomLintConfigs.empty);
+    rule = rules.whereType<DartLintRule>().single;
+  });
 
-// List<File> getFiles() {
-//   final currentDir = Directory.current.uri;
-//   final libDir = Directory.fromUri(Uri.parse('${currentDir}example/lib'));
-//   final testDir = Directory.fromUri(Uri.parse('${currentDir}example/test'));
+  /// Runs the rule against a fixture file and returns the number of lints.
+  Future<int> lintCount(String fixture) async {
+    final file = File('test/fixtures/$fixture').absolute;
+    final errors = await rule.testAnalyzeAndRun(file);
+    return errors.length;
+  }
 
-//   final libFiles = libDir
-//       .listSync(recursive: true)
-//       .where((element) => element is File && element.path.endsWith('.dart'))
-//       .cast<File>();
+  group('class_match_file_name', () {
+    test('exposes a single rule with the expected code', () {
+      expect(rule.code.name, 'class_match_file_name');
+    });
 
-//   final testFiles = testDir
-//       .listSync(recursive: true)
-//       .where((element) => element is File && element.path.endsWith('.dart'))
-//       .cast<File>();
+    test('no lint when the file name matches the first public class', () async {
+      expect(await lintCount('correct_name.dart'), 0);
+    });
 
-//   return [...libFiles, ...testFiles];
-// }
+    test('reports a lint when the first public class does not match', () async {
+      expect(await lintCount('wrong_name.dart'), 1);
+    });
 
-// int getExpectedErrorsCount(File file, String code) {
-//   final content = file.readAsStringSync();
-//   final lines = content.split('\n');
-//   final errors = lines.where(
-//     (element) => element.contains('// expect_lint: $code'),
-//   );
-//   return errors.length;
-// }
+    test('skips leading private classes', () async {
+      expect(await lintCount('skips_private_classes.dart'), 0);
+    });
+
+    test('checks only the first public class', () async {
+      expect(await lintCount('only_first_public.dart'), 0);
+    });
+  });
+}
