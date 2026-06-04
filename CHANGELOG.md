@@ -1,3 +1,11 @@
+## 1.0.0
+
+* Migrated to `analyzer` 8 and `custom_lint_builder` 0.8; widened dependency constraints to track the latest supported versions
+* Updated the rule to the non-deprecated `Diagnostic` / `DiagnosticReporter` / `DiagnosticSeverity` analyzer API
+* Removed the `custom_lint` plugin activation from the package's own `analysis_options.yaml` so `dart analyze` / pub.dev can resolve and analyze the package
+* Stopped publishing checked-in `build/` artifacts
+
+
 ## 0.2.3
 
 * Migrated to `analyzer` 7 and `custom_lint_builder` 0.7 for compatibility with current Dart SDKs

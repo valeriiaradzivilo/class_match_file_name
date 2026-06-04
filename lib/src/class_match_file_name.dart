@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:analyzer/diagnostic/diagnostic.dart';
 // ignore: undefined_hidden_name
 import 'package:analyzer/error/error.dart' hide LintCode;
 import 'package:analyzer/error/listener.dart';
@@ -23,7 +24,7 @@ class ClassMatchFileName extends DartLintRule {
   static const LintCode _code = LintCode(
     name: 'class_match_file_name',
     problemMessage: 'Class name should match file name',
-    errorSeverity: ErrorSeverity.ERROR,
+    errorSeverity: DiagnosticSeverity.ERROR,
   );
 
   const ClassMatchFileName() : super(code: _code);
@@ -39,7 +40,7 @@ class ClassMatchFileName extends DartLintRule {
   @override
   void run(
     CustomLintResolver resolver,
-    ErrorReporter reporter,
+    DiagnosticReporter reporter,
     CustomLintContext context,
   ) {
     bool firstPublicClassChecked = false;
@@ -75,8 +76,8 @@ class _ReplaceFileName extends DartFix {
     CustomLintResolver resolver,
     ChangeReporter reporter,
     CustomLintContext context,
-    AnalysisError analysisError,
-    List<AnalysisError> others,
+    Diagnostic analysisError,
+    List<Diagnostic> others,
   ) {
     // final String fileName = _fileName(resolver.source.shortName);
 

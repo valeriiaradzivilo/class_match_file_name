@@ -47,6 +47,6 @@ app.*.map.json
 .fvm/
 
 
-build/
+# build/
 flutter_logs.txt
 build/unit_test_assets
